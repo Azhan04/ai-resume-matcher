@@ -290,7 +290,7 @@ document.getElementById("uploadForm").onsubmit = async function (e) {
     formData.append("job_description", jobDesc);
 
     try {
-        const response = await fetch("http://127.0.0.1:8000/analyze", {
+        const response = await fetch("https://ai-resume-matcher-0aki.onrender.com", {
             method: "POST",
             body: formData,
         });
